@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.CourseAssignViewController">
+    <children>
+      <TextField id="staffIDField" fx:id="staffIDField" layoutX="52.0" layoutY="25.0" prefHeight="31.0" prefWidth="193.0" promptText="Staff ID" AnchorPane.leftAnchor="52.0" />
+      <ComboBox id="deptCombo" fx:id="deptCombo" layoutX="258.0" layoutY="25.0" prefHeight="31.0" prefWidth="193.0" promptText="Department" AnchorPane.leftAnchor="258.0" AnchorPane.rightAnchor="111.0" />
+      <Label id="goBtn" fx:id="goBtn" alignment="CENTER" layoutX="461.0" layoutY="25.0" onMouseClicked="#setCourseAssignTableCellValueFactory"  prefHeight="31.0" prefWidth="49.0" style="-fx-background-color: #00507F;" text="GO" textFill="#fffbfb" AnchorPane.rightAnchor="52.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TableView id="courseTable" fx:id="courseTable" layoutX="27.0" layoutY="76.0" prefHeight="293.0" prefWidth="514.0" scaleShape="false" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="21.0">
+        <columns>
+          <TableColumn id="courseCol" fx:id="courseCol"  maxWidth="300.0" minWidth="300.0" prefWidth="300.0" text="COURSE" />
+          <TableColumn id="codeCol" fx:id="codeCol" maxWidth="131.0" minWidth="131.0" prefWidth="131.0" text="COURSE CODE" />
+          <TableColumn id="levelCol" fx:id="levelCol" maxWidth="110.0" prefWidth="110.0" text="LEVEL" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label id="submitBtn" fx:id="submitBtn" alignment="CENTER" layoutX="249.0" layoutY="392.0" onMouseClicked="#assign"  prefHeight="31.0" prefWidth="71.0" style="-fx-background-color: #00507F;" text="ASSIGN" textFill="#eeeeee">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+    </children>
+</AnchorPane>

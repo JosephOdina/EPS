@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.HomeViewController">
+   <children>
+      <Label id="logout_btn" fx:id="logout_btn" layoutX="550.0" layoutY="35.0" onMouseClicked="#logoutAction">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <Label id="staff_btn" fx:id="staff_btn" alignment="CENTER" layoutX="128.0" layoutY="411.0" onMouseClicked="#openStaffView" opacity="0.7" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #005780" text="Staff" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView id="logo" fitHeight="187.0" fitWidth="191.0" layoutX="262.0" layoutY="81.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/img/logo.png" />
+         </image>
+      </ImageView>
+      <Label id="student_btn" fx:id="student_btn" alignment="CENTER" layoutX="298.0" layoutY="411.0" onMouseClicked="#openStudentView" opacity="0.7" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #005780;" text="Students" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="result_btn" fx:id="result_btn" alignment="CENTER" layoutX="456.0" layoutY="411.0" onMouseClicked="#openResultView" opacity="0.7" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #005780" text="Results" textFill="WHITE" AnchorPane.leftAnchor="456.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="faculty_btn" fx:id="faculty_btn" alignment="CENTER" layoutX="57.0" layoutY="327.0" onMouseClicked="#openFDPCView" opacity="0.7" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #005780;" text="Faculties" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="department_btn" fx:id="department_btn" alignment="CENTER" layoutX="212.0" layoutY="327.0" onMouseClicked="#openFDPCView" opacity="0.7" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #005780;" text="Departments" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="program_btn" fx:id="program_btn" alignment="CENTER" layoutX="369.0" layoutY="327.0" onMouseClicked="#openFDPCView" opacity="0.7" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #005780;" text="Programs" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="course_btn" fx:id="course_btn" alignment="CENTER" layoutX="523.0" layoutY="327.0" onMouseClicked="#openFDPCView" opacity="0.7" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #005780;" text="Courses" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="facDepShow_btn" fx:id="facDepShow_btn" layoutX="40.0" layoutY="35.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

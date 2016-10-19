@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/ResultView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/LoginViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/AddStaffView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/CourseAssignViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/CourseRegViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/DBCon.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/StudentViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Semester.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Student.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Department.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/AddResultView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/CourseAssignView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/LoginView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/AddStudentViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/AddResultViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/AddStudentView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/CourseRegView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/EPS.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Session.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/StaffViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Rank.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Program.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/StaffView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/CourseReg.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/AddStaffViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/HomeViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Course.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Staff.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/ResultViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/FDPCViewController.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Level_.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/FDPCView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/HomeView.fxml</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Result.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/Faculty.java</file>
+            <file>file:/C:/Users/Chukwuka%20Odina/Google%20Drive/B.Sc.%20Project%20Files/App/EPS/src/eps/StudentView.fxml</file>
+        </group>
+    </open-files>
+</project-private>

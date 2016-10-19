@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.CourseRegViewController">
+   <children>
+      <TextField id="RegnoField" fx:id="RegnoField" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="149.0" promptText="Reg. Number" />
+      <TableView id="courseTable" fx:id="courseTable" layoutX="14.0" layoutY="58.0" prefHeight="322.0" prefWidth="673.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+        <columns>
+          <TableColumn id="CourseCol" fx:id="CourseCol" prefWidth="213.0" text="COURSE" />
+          <TableColumn id="CodeCol" fx:id="CodeCol" prefWidth="213.0" text="COURSE CODE" />
+          <TableColumn id="CreditCol" fx:id="CreditCol" prefWidth="213.0" text="COURSE CREDIT" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ComboBox id="SessionCombo" fx:id="SessionCombo" layoutX="171.0" layoutY="14.0" prefHeight="31.0" prefWidth="150.0" promptText="Session" />
+      <ComboBox id="LevelCombo" fx:id="LevelCombo" layoutX="328.0" layoutY="14.0" prefHeight="31.0" prefWidth="150.0" promptText="Level" />
+      <ComboBox id="SemesterCombo" fx:id="SemesterCombo" layoutX="484.0" layoutY="14.0" prefHeight="31.0" prefWidth="150.0" promptText="Semester" />
+      <Label id="GoButton" fx:id="GoButton" alignment="CENTER" layoutX="642.0" layoutY="14.0" onMouseClicked="#setCregTableCellValueFactory" prefHeight="31.0" prefWidth="43.0" style="-fx-background-color: #00507F;" text="GO" textFill="WHITE" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="SubmitButton" fx:id="SubmitButton" alignment="CENTER" layoutX="297.0" layoutY="394.0" onMouseClicked="#register" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #00507F;" text="REGISTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

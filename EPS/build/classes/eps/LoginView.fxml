@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="450.0" maxWidth="597.0" minHeight="380.0" minWidth="527.0" prefHeight="380.0" prefWidth="527.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.LoginViewController">
+   <children>
+      <TextField id="login_field" fx:id="login_field" alignment="CENTER" layoutX="150.0" layoutY="150.0" prefHeight="40.0" prefWidth="227.0" promptText="Enter your staff ID" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+      <PasswordField id="pword_field" fx:id="pword_field" alignment="CENTER" layoutX="150.0" layoutY="205.0" prefHeight="40.0" prefWidth="227.0" promptText="Enter your password" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+      <Button id="login_btn" fx:id="login_btn" alignment="CENTER" layoutX="229.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #001f3f;" text="Login" textFill="#deddeb">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="85.0" layoutY="300.0" prefHeight="72.0" prefWidth="358.0" text="GODFREY OKOYE UNIVERSITY" textFill="#0516367d" visible="false">
+         <font>
+            <Font name="Bauhaus 93" size="28.0" />
+         </font>
+      </Label>
+      <ImageView id="logo" fitHeight="108.0" fitWidth="149.0" layoutX="211.0" layoutY="28.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/img/logo.png" />
+         </image>
+      </ImageView>
+      <Label id="info_bar" fx:id="info_bar" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="258.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="194.0" textFill="#8a1212" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>

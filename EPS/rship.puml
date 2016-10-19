@@ -1,0 +1,29 @@
+@startuml
+annotation java.lang.Override
+annotation javafx.fxml.FXML
+class eps.EPS
+class eps.LoginViewController
+class java.net.URL
+class java.util.ResourceBundle
+class javafx.application.Application
+class javafx.event.ActionEvent
+class javafx.fxml.FXMLLoader
+class javafx.scene.Parent
+class javafx.scene.Scene
+class javafx.scene.control.Label
+class javafx.stage.Stage
+interface javafx.fxml.Initializable
+eps.EPS ..> java.lang.Override
+eps.EPS --|> javafx.application.Application
+eps.EPS ..> javafx.fxml.FXMLLoader
+eps.EPS ..> javafx.scene.Parent
+eps.EPS ..> javafx.scene.Scene
+eps.EPS ..> javafx.stage.Stage
+eps.LoginViewController ..> java.lang.Override
+eps.LoginViewController ..> javafx.fxml.FXML
+eps.LoginViewController ..> java.net.URL
+eps.LoginViewController ..> java.util.ResourceBundle
+eps.LoginViewController ..> javafx.event.ActionEvent
+eps.LoginViewController ..> javafx.scene.control.Label
+eps.LoginViewController --|> javafx.fxml.Initializable
+@enduml

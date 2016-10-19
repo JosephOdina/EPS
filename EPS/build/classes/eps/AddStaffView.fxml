@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="addStaffPane" prefHeight="565.0" prefWidth="695.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.AddStaffViewController">
+   <children>
+      <TextField id="firstName" fx:id="firstName" alignment="CENTER" layoutX="32.0" layoutY="95.0" prefHeight="25.0" prefWidth="173.0" promptText="First Name" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="490.0" />
+      <TextField id="middleName" fx:id="middleName" alignment="CENTER" layoutX="246.0" layoutY="95.0" prefHeight="25.0" prefWidth="196.0" promptText="Middle Name" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="253.0" />
+      <TextField id="lastName" fx:id="lastName" alignment="CENTER" layoutX="473.0" layoutY="95.0" prefHeight="25.0" prefWidth="173.0" promptText="Last Name" AnchorPane.leftAnchor="473.0" AnchorPane.rightAnchor="49.0" />
+      <ComboBox id="facultyCombo" fx:id="facultyCombo" layoutX="32.0" layoutY="174.0" prefHeight="25.0" prefWidth="173.0" promptText="Faculty" visibleRowCount="5" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="490.0" />
+      <ComboBox id="departmentCombo" fx:id="departmentCombo" layoutX="246.0" layoutY="174.0" onMouseClicked="#fillDepartmentCombo" prefHeight="25.0" prefWidth="196.0" promptText="Department" visibleRowCount="5" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="253.0" />
+      <ComboBox id="rankCombo" fx:id="rankCombo" layoutX="473.0" layoutY="174.0" prefHeight="25.0" prefWidth="173.0" promptText="Rank" visibleRowCount="5" AnchorPane.leftAnchor="473.0" AnchorPane.rightAnchor="49.0" />
+      <TextField id="staffID" fx:id="staffID" alignment="CENTER" layoutX="133.0" layoutY="345.0" prefHeight="25.0" prefWidth="190.0" promptText="Staff ID" />
+      <TextField id="password" fx:id="password" alignment="CENTER" layoutX="372.0" layoutY="345.0" prefHeight="25.0" prefWidth="190.0" promptText="Password" />
+      <RadioButton id="femaleRadioButton" fx:id="femaleRadioButton" contentDisplay="CENTER" layoutX="362.0" layoutY="266.0" mnemonicParsing="false" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexRadioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="maleRadioButton" fx:id="maleRadioButton" contentDisplay="CENTER" layoutX="275.0" layoutY="266.0" mnemonicParsing="false" selected="true" text="Male" toggleGroup="$sexRadioGroup" />
+      <Button id="createStaffButton" fx:id="createStaffButton" layoutX="282.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleCreateStaffButtonAction" prefHeight="25.0" prefWidth="131.0" text="CREATE" />
+      <Label id="info_bar" fx:id="info_bar" alignment="CENTER" contentDisplay="CENTER" layoutX="347.0" layoutY="389.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" textFill="#b91515" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

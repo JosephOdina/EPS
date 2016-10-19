@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.FDPCViewController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="24.0" prefHeight="19.0" prefWidth="829.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label id="courseLabel" fx:id="courseLabel" layoutX="619.0" layoutY="24.0" text="COURSE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="programLabel" fx:id="programLabel" layoutX="415.0" layoutY="24.0" text="PROGRAM" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="facultyLabel" fx:id="facultyLabel" layoutX="14.0" layoutY="24.0" text="FACULTY" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="departmentLabel" fx:id="departmentLabel" layoutX="227.0" layoutY="24.0" text="    DEPARTMENT" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <SplitPane dividerPositions="0.25, 0.5, 0.75" layoutX="14.0" layoutY="48.0" prefHeight="481.0" prefWidth="828.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="48.0">
+        <items>
+          <AnchorPane id="facultyPane" fx:id="facultyPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="207.0">
+               <children>
+                  <ListView id="facultyList" fx:id="facultyList" prefHeight="479.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+          <AnchorPane id="departmentPane" fx:id="departmentPane" minHeight="0.0" minWidth="0.0" prefHeight="479.0" prefWidth="401.0">
+               <children>
+                  <ListView id="departmentList" fx:id="departmentList" prefHeight="479.0" prefWidth="201.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+          <AnchorPane id="programPane" fx:id="programPane" prefHeight="479.0" prefWidth="109.0">
+               <children>
+                  <ListView id="programList" fx:id="programList" prefHeight="479.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+          <AnchorPane id="coursePane" fx:id="coursePane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ListView id="courseList" fx:id="courseList" prefHeight="479.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="addStaffPane" prefHeight="565.0" prefWidth="607.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.AddStudentViewController">
+   <children>
+      <TextField id="firstName" fx:id="firstName" alignment="CENTER" layoutX="285.0" layoutY="54.0" prefHeight="35.0" prefWidth="281.0" promptText="First Name" />
+      <TextField id="middleName" fx:id="middleName" alignment="CENTER" layoutX="285.0" layoutY="114.0" prefHeight="35.0" prefWidth="281.0" promptText="Middle Name" />
+      <TextField id="lastName" fx:id="lastName" alignment="CENTER" layoutX="285.0" layoutY="177.0" prefHeight="35.0" prefWidth="281.0" promptText="Last Name" />
+      <ComboBox id="facultyCombo" fx:id="facultyCombo" layoutX="41.0" layoutY="314.0" prefHeight="30.0" prefWidth="250.0" promptText="Faculty" visibleRowCount="5" />
+      <ComboBox id="departmentCombo" fx:id="departmentCombo" layoutX="316.0" layoutY="314.0" onMouseClicked="#fillDepartmentCombo"  prefHeight="30.0" prefWidth="250.0" promptText="Department" visibleRowCount="5" />
+      <ComboBox id="programCombo" fx:id="programCombo" layoutX="41.0" layoutY="374.0" onMouseClicked="#fillProgramCombo"  prefHeight="30.0" prefWidth="250.0" promptText="Program" visibleRowCount="5" />
+      <ComboBox id="levelCombo" fx:id="levelCombo" layoutX="316.0" layoutY="374.0" prefHeight="30.0" prefWidth="250.0" promptText="Level" visibleRowCount="5" />
+      <RadioButton id="femaleRadioButton" fx:id="femaleRadioButton" contentDisplay="CENTER" layoutX="328.0" layoutY="439.0" mnemonicParsing="false" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexRadioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="maleRadioButton" fx:id="maleRadioButton" contentDisplay="CENTER" layoutX="241.0" layoutY="439.0" mnemonicParsing="false" selected="true" text="Male" toggleGroup="$sexRadioGroup" />
+      <Button id="createStudentButton" fx:id="createStudentButton" layoutX="238.0" layoutY="510.0" onMouseClicked="#handleCreateStudentAction" prefHeight="25.0" prefWidth="131.0" text="CREATE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label id="info_bar" fx:id="info_bar" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="476.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="376.0" textFill="#b91515">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField id="regNumber" fx:id="regNumber" alignment="CENTER" layoutX="285.0" layoutY="244.0" prefHeight="35.0" prefWidth="281.0" promptText="Reg. Number" />
+      <Pane id="imagePane" fx:id="imagePane" layoutX="41.0" layoutY="54.0" maxHeight="200.0" maxWidth="220.0" minHeight="200.0" minWidth="220.0" prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #0058FF; -fx-border-width: 0.2; -fx-border-color: #000;">
+         <children>
+            <ImageView id="imageView" fx:id="imageView" fitHeight="0" fitWidth="0" opacity="0.55" pickOnBounds="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label id="addPhotoButton" fx:id="addPhotoButton" alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="254.0" onMouseClicked="#selectIimage"  prefHeight="25.0" prefWidth="220.0" style="-fx-background-color: #bbb;" text="ADD PHOTO">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#d0d3da" height="10.0" offsetY="3.0" radius="4.5" width="10.0" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eps.ResultViewController">
+   <children>
+      <TextField id="course_or_studentTextField" fx:id="course_or_studentTextField" layoutX="29.0" layoutY="57.0" prefHeight="29.0" prefWidth="171.0" AnchorPane.leftAnchor="29.0" />
+      <Label layoutX="29.0" layoutY="26.0" prefHeight="19.0" prefWidth="97.0" text="View result by:" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="673.0" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox id="sessionCombo" fx:id="sessionCombo" layoutX="230.0" layoutY="57.0" prefHeight="29.0" prefWidth="145.0" promptText="Session" AnchorPane.leftAnchor="230.0" />
+      <Label id="goBtn" fx:id="goBtn" alignment="CENTER" layoutX="576.0" layoutY="57.0" onMouseClicked="#setResultTableCellValueFactory" prefHeight="29.0" prefWidth="45.0" style="-fx-background-color: #00507F;" text="GO" textFill="#fcf3f3" AnchorPane.leftAnchor="576.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TableView id="resultTable" fx:id="resultTable" layoutX="29.0" layoutY="104.0" prefHeight="379.0" prefWidth="587.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="104.0">
+         <columns>
+            <TableColumn id="nameCol" fx:id="nameCol" minWidth="178.0" prefWidth="178.0" text="NAME" />
+            <TableColumn id="regnoCol" fx:id="regnoCol" minWidth="59.0" prefWidth="69.0" text="REG. NUMBER" />
+            <TableColumn id="codeCol" fx:id="codeCol" minWidth="49.0" prefWidth="49.0" text="COURSE CODE" />
+            <TableColumn id="attendanceCol" fx:id="attendanceCol" minWidth="33.0" prefWidth="33.0" text="ATTENDANCE" />
+            <TableColumn id="assignmentCol" fx:id="assignmentCol" minWidth="32.0" prefWidth="32.0" text="ASSIGNMENT" />
+            <TableColumn id="quizCol" fx:id="quizCol" minWidth="13.0" prefWidth="13.0" text="QUIZ" />
+            <TableColumn id="examCol" fx:id="examCol" minWidth="28.0" prefWidth="28.0" text="EXAM" />
+            <TableColumn id="totalCol" fx:id="totalCol" minWidth="33.0" prefWidth="33.0" text="TOTAL" />
+            <TableColumn id="gradeCol" fx:id="gradeCol" minWidth="15.0" prefWidth="15.0" text="GRADE" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ComboBox id="semesterCombo" fx:id="semesterCombo" layoutX="401.0" layoutY="57.0" prefHeight="29.0" prefWidth="145.0" promptText="Semester" AnchorPane.leftAnchor="401.0" />
+      <AnchorPane layoutX="375.0" layoutY="660.0" prefHeight="62.0" prefWidth="492.0" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="23.0">
+         <children>
+            <Label id="addResultBtn" fx:id="addResultBtn" onMouseClicked="#openAddResultView"  alignment="CENTER" contentDisplay="BOTTOM" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="75.0" scaleShape="false" style="-fx-background-color: #a40e0e;" text="Add Result" textAlignment="CENTER" textFill="#fffefe" AnchorPane.bottomAnchor="32.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="printBtn" fx:id="printBtn" alignment="CENTER" layoutX="411.0" layoutY="1.0" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #00507F;" text="Print" textFill="#fffefe" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="6.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label id="viewByCourseBtn" fx:id="viewByCourseBtn" layoutX="140.0" layoutY="27.0" onMouseClicked="#viewByCourse" text="course" textFill="#0e055e" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="27.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="viewByStudentBtn" fx:id="viewByStudentBtn" layoutX="209.0" layoutY="27.0" onMouseClicked="#viewByStudent" text="student" textFill="#430303" AnchorPane.topAnchor="27.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label id="gpaLabel" fx:id="gpaLabel" layoutX="29.0" layoutY="658.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="29.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
